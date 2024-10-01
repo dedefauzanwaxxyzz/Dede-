@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Futsal</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header bg-primary text-white">
+            <h2 class="card-title text-center">Pendaftaran Tim Futsal</h2>
+        </div>
+        <div class="card-body">
+            <form id="futsalForm">
+                <div class="form-group">
+                    <label for="team">Nama Tim:</label>
+                    <input type="text" class="form-control" id="team" name="team" placeholder="Masukkan nama tim Anda" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Nama Pemain:</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan nama lengkap pemain" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="position">Posisi Bermain:</label>
+                    <select class="form-control" id="position" name="position" required>
+                        <option value="">Pilih posisi</option>
+                        <option value="kiper">Kiper</option>
+                        <option value="anchor">Anchor</option>
+                        <option value="flank">Flank</option>
+                        <option value="pivot">Pivot</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Nomor Telepon:</label>
+                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Masukkan nomor telepon pemain" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Catatan Tambahan (Opsional):</label>
+                    <textarea class="form-control" id="message" name="message" placeholder="Tambahkan catatan..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">Daftar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
